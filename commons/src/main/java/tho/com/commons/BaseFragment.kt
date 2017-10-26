@@ -13,8 +13,9 @@ import tho.com.commons.R
 abstract class BaseFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
-        val view = inflater.inflate(getLayoutResId(), container, false)
+                              savedInstanceState: Bundle?): View? {
+        //val view = inflater.inflate(getLayoutResId(), container, false)
+        val view = container?.inflate(getLayoutResId())
         return view
     }
 
