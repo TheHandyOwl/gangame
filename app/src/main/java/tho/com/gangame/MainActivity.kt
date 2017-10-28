@@ -6,11 +6,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    val DEFAULT_OPTION = R.id.action_deals
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        navigationView.selectedItemId = R.id.action_deals
+        //navigationView.selectedItemId = R.id.action_deals
+        navigationView.selectedItemId = DEFAULT_OPTION
 
     }
 }
